@@ -12,60 +12,6 @@
     background-size: cover;
 }
 
-/*.hours {*/
-    /*top: 50%;*/
-    /*content: "";*/
-    /*width: 170px;*/
-    /*height: 6px;*/
-    /*transform: rotate(150deg);*/
-    /*position: absolute;*/
-/*}*/
-
-/*.hours::after {*/
-    /*border: 1px solid black;*/
-    /*background-color: black;*/
-    /*content: "";*/
-    /*height: 4px;*/
-    /*position: absolute;*/
-    /*width: 50%;*/
-/*}*/
-
-/*.minutes {*/
-    /*top: calc(50% + 1px);*/
-    /*content: "";*/
-    /*width: 240px;*/
-    /*height: 4px;*/
-    /*transform: rotate(250deg);*/
-    /*position: absolute;*/
-/*}*/
-
-/*.minutes::after {*/
-    /*border: 1px solid blue;*/
-    /*background-color: blue;*/
-    /*content: "";*/
-    /*height: 2px;*/
-    /*position: absolute;*/
-    /*width: 50%;*/
-/*}*/
-
-/*.seconds {*/
-    /*top: calc(50% + 1px);*/
-    /*content: "";*/
-    /*width: 270px;*/
-    /*height: .5px;*/
-    /*transform: rotate(350deg);*/
-    /*position: absolute;*/
-/*}*/
-
-/*.seconds::after {*/
-    /*border: .5px solid red;*/
-    /*background-color: red;*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*width: 50%;*/
-    /*height: .5px;*/
-/*}*/
-
 .dot {
     position: relative;
     top: calc(50% - 6px);
