@@ -7,7 +7,7 @@ var hourAngle = (360/12),
     minuteAngle = (360/60),
     secondAngle = (360/60),
     setSecond = second*secondAngle,
-    setMinute = minute*minuteAngle,
+    setMinute = minute*minuteAngle+(setSecond/60),
     setHour = hour*hourAngle+(setMinute/12);
 
 document.querySelector('.seconds').style.transform = 'rotate(' +setSecond+ 'deg)';
