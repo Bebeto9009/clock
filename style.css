@@ -1,15 +1,77 @@
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
 .circle {
-    position: absolute;
+    position: relative;
     display: flex;
     align-content: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 4px solid black;
     content: "";
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-image: url("c14bf6cc1ec79c6bbb09c414fdfbfbc7.jpg");
+    /*background-image: url("c14bf6cc1ec79c6bbb09c414fdfbfbc7.jpg");*/
     background-size: cover;
+}
+
+.name {
+    position: absolute;
+    top: 20%;
+}
+
+.dashes {
+    position: absolute;
+    width: 10px;
+    height: 299px;
+    border: 1px solid black;
+    background-color: black;
+    z-index: -9999;
+}
+
+.dashes::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: black;
+    z-index: -9999;
+    transform: rotate(90deg);
+}
+
+.dashes::after {
+    top: 25px;
+    right: -121px;
+    content: '';
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.dashes.second {
+    width: 3px;
+    transform: rotate(30deg);
+}
+
+.dashes.second::before {
+    width: 3px;
+}
+
+.dashes.third {
+    width: 3px;
+    transform: rotate(60deg);
+}
+
+.dashes.third::before {
+    width: 3px;
 }
 
 .dot {
