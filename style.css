@@ -20,12 +20,12 @@
     background-size: cover;
 }
 
-.name {
+.circle__name {
     position: absolute;
     top: 20%;
 }
 
-.dashes {
+.circle__dashes {
     position: absolute;
     width: 10px;
     height: 299px;
@@ -34,7 +34,7 @@
     z-index: -9999;
 }
 
-.dashes::before {
+.circle__dashes::before {
     content: '';
     position: absolute;
     width: 10px;
@@ -45,7 +45,7 @@
     transform: rotate(90deg);
 }
 
-.dashes::after {
+.circle__dashes::after {
     top: 25px;
     right: -121px;
     content: '';
@@ -56,25 +56,25 @@
     background-color: white;
 }
 
-.dashes.second {
+.circle__dashes--second {
     width: 3px;
     transform: rotate(30deg);
 }
 
-.dashes.second::before {
+.circle__dashes--second::before {
     width: 3px;
 }
 
-.dashes.third {
+.circle__dashes--third {
     width: 3px;
     transform: rotate(60deg);
 }
 
-.dashes.third::before {
+.circle__dashes--third::before {
     width: 3px;
 }
 
-.dot {
+.circle__dot {
     position: relative;
     top: calc(50% - 6px);
     content: '';
@@ -85,7 +85,7 @@
     background-color: black;
 }
 
-.hours {
+.circle__hours {
     position: absolute;
     align-self: center;
     content: "";
@@ -94,7 +94,7 @@
     transform: rotate(0deg);
 }
 
-.hours::after {
+.circle__hours::after {
     position: absolute;
     border: 1px solid black;
     background-color: black;
@@ -103,7 +103,7 @@
     width: 4px;
 }
 
-.minutes {
+.circle__minutes {
     position: absolute;
     align-self: center;
     content: "";
@@ -112,7 +112,7 @@
     transform: rotate(250deg);
 }
 
-.minutes::after {
+.circle__minutes::after {
     position: absolute;
     border: 1px solid blue;
     background-color: blue;
@@ -121,7 +121,7 @@
     width: 2px;
 }
 
-.seconds {
+.circle__seconds {
     align-self: center;
     content: "";
     width: .5px;
@@ -130,7 +130,7 @@
     position: absolute;
 }
 
-.seconds::after {
+.circle__seconds::after {
     border: .5px solid red;
     background-color: red;
     content: "";
